@@ -1,9 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@clerk/nuxt'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@clerk/nuxt', '@nuxtjs/supabase'],
   runtimeConfig: {
     groqApiKey: process.env.GROQ_API_KEY,
     public: {
